@@ -1,0 +1,23 @@
+{
+  "name": "res-sniffer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "run": "electron ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tidys/res-sniffer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tidys/res-sniffer/issues"
+  },
+  "homepage": "https://github.com/tidys/res-sniffer#readme",
+  "dependencies": {
+    "electron": "^5.0.0"
+  }
+}
