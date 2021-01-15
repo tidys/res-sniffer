@@ -1,0 +1,11 @@
+<div id="navigation">
+    <div class="container">
+        <div class="item"
+             v-for="(item, index) in items"
+             @click="onClickItem(item)"
+             :class="{'item-select':item.select}"
+        >
+            {{item.name}}
+        </div>
+    </div>
+</div>

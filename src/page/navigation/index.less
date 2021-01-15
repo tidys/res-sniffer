@@ -1,0 +1,28 @@
+#navigation {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #444444;
+
+  .container {
+    width: 80px;
+
+    .item {
+      height: 30px;
+      user-select: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .item-select {
+      background-color: #4d5669 !important;
+      color: white;
+    }
+
+    .item:hover {
+      cursor: pointer;
+      background-color: #e9ebec;
+    }
+  }
+}

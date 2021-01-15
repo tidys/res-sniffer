@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd0677a4-0e62-410f-b44b-990ab2314f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/iview.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/iview.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/prifile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gitee-api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/md5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/navigation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/navigation/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/navigation/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/repo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/repo/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/repo/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vue-ext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -39,11 +58,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.22.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="10.17.50" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="settings.editor.splitter.proportion" value="0.0" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -51,10 +79,31 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/page/navigation" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.less-watch">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="less-watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="less-watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -65,8 +114,13 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.run" />
+      <item itemvalue="npm.less-watch" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.less-watch" />
         <item itemvalue="npm.run" />
       </list>
     </recent_temporary>
@@ -83,8 +137,21 @@
       <option name="presentableId" value="Default" />
       <updated>1610260921901</updated>
       <workItem from="1610260923108" duration="643000" />
-      <workItem from="1610261639224" duration="120000" />
+      <workItem from="1610261639224" duration="1460000" />
+      <workItem from="1610263387564" duration="41000" />
+      <workItem from="1610263431276" duration="230000" />
+      <workItem from="1610263664208" duration="19000" />
+      <workItem from="1610263719017" duration="8501000" />
+      <workItem from="1610713474114" duration="15951000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1610261955534</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610261955534</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,16 +160,23 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
           <line>14</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
