@@ -2,28 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd0677a4-0e62-410f-b44b-990ab2314f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/prifile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gitee-api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/md5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/navigation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/navigation/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/navigation/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/repo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/repo/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/repo/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vue-ext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/repo/res.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/repo/res.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/repo/res.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gitee-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gitee-api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/navigation/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/repo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/repo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/repo/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +46,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -142,7 +137,11 @@
       <workItem from="1610263431276" duration="230000" />
       <workItem from="1610263664208" duration="19000" />
       <workItem from="1610263719017" duration="8501000" />
-      <workItem from="1610713474114" duration="15951000" />
+      <workItem from="1610713474114" duration="16074000" />
+      <workItem from="1610766838960" duration="3369000" />
+      <workItem from="1610791172055" duration="580000" />
+      <workItem from="1610855930224" duration="43000" />
+      <workItem from="1610859509751" duration="4228000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610261955534</created>
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610261955534</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1610730907916</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610730907916</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +168,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

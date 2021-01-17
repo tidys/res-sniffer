@@ -1,0 +1,13 @@
+<div id="res"
+     @mouseenter="isHover=true"
+     @mouseleave="isHover=false">
+    <Icon class="close"
+          @click="onClose"
+          v-show="isHover" size="20" type="md-close-circle"></Icon>
+    <div v-if="isImage" class="view">
+        <img :src="imageData" alt="">
+    </div>
+    <div class="name">
+        {{data.path}}
+    </div>
+</div>

@@ -12,6 +12,9 @@ module.exports = Vue.extend({
             this.$set(item, 'select', false);
         })
     },
+    mounted () {
+        this.onClickItem(this.items[0])
+    },
     methods: {
         onClickItem (item) {
             if (!item.select) {

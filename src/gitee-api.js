@@ -7,28 +7,59 @@ const Action = {
     PagesInfo: 'pages', // 获取pages信息
     PagesBuilds: 'pages/builds', // 新建pages服务
     CreateFile: 'contents', // 创建文件
-    RepoTree: 'git/trees'
+    RepoTree: 'git/trees',
+    FileUrl: 'git/blobs', // 获取文件路径
+    DeleteFile: 'contents'
 };
 module.exports = {
+    isLimited: false,
     Action,
     _fillingUrl (action) {
         const { Owner, Repo } = require('./core/settings');
         return `https://gitee.com/api/v5/repos/${Owner}/${Repo}/${action}`;
     },
+    _onCatch (e) {
+        const { status } = e.request;
+        if (status === 403) {
+            debugger
+            // 访问受限，24小时后自动解除
+            this.isLimited = true;
+        }
+    },
     async get (action) {
         let url = this._fillingUrl(action)
-        return await axios.get(url);
+        return await axios.get(url)//.catch(this._onCatch);
     },
     async post (action, data) {
         let url = this._fillingUrl(action)
-        return await axios.post(url, data);
+        return await axios.post(url, data)//.catch(this._onCatch);
     },
+    async put (action, data) {
+        let url = this._fillingUrl(action)
+        return await axios.put(url, data)//.catch(this._onCatch);
+    },
+    async delete (action, data) {
+        let url = this._fillingUrl(action);
+        return await axios.delete(url, { data })//.catch(this._onCatch)
+    },
+    async deleteFile (file) {
+        if (this.isLimited) {
+            return null;
+        }
 
+        const { Token } = require('./core/settings');
+        return await this.delete(`${Action.DeleteFile}/${file}`, {
+            access_token: Token,
+        })
+    },
 
     pages () {
 
     },
     pagesInfo () {
+        if (this.isLimited) {
+            return null;
+        }
         this.get(Action.PagesInfo).then(({ data }) => {
             const { status, url } = data;
             if (status === 'built') {
@@ -38,7 +69,13 @@ module.exports = {
             }
         });
     },
+    async getFileUrl (blob) {
+        return await this.get(`${Action.FileUrl}/${blob}`);
+    },
     async getRepoTree () {
+        if (this.isLimited) {
+            return null;
+        }
         let branch = 'master';
         return await this.get(`${Action.RepoTree}/${branch}`)
     },
@@ -46,6 +83,10 @@ module.exports = {
 
     },
     async createFile (filePath) {
+        if (this.isLimited) {
+            return null;
+        }
+
         const { Token } = require('./core/settings');
         let fileExt = Path.extname(filePath);
         let fileName = Path.basename(filePath, fileExt);

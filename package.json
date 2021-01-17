@@ -30,6 +30,7 @@
     "gulp-less": "^4.0.1",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
+    "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "vuex": "^3.6.0"
   }

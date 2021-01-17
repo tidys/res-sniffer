@@ -23,7 +23,7 @@ module.exports = {
     save ({ owner, repo, token }) {
         this.Owner = owner;
         this.Repo = repo;
-        this.token = token;
+        this.Token = token;
 
         this._profile.set('owner', owner);
         this._profile.set('repo', repo);

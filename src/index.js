@@ -129,11 +129,6 @@ new Vue({
             })
 
         },
-        // 获取仓库文件
-        async onGetRepoTree () {
-            let { data } = await GiteeApi.getRepoTree();
-            debugger
-            console.log(data)
-        }
+
     }
 })

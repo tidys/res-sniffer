@@ -1,3 +1,20 @@
 <div id="repo">
-    <i-button>刷新</i-button>
+    <div class="content">
+        <i-button @click="onGetRepoTree">刷新仓库</i-button>
+
+        <div class="list">
+            <res v-for="(item, index) in allFiles"
+                 :data="item"
+                 @delete="onDeleteFile(item)"
+            >
+            </res>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div v-if="branch" class="branch">
+            分支：<span>{{branch}}</span>
+        </div>
+    </div>
 </div>

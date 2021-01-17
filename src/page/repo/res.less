@@ -1,0 +1,32 @@
+#res:hover{
+  border: 1px solid #333333;
+
+}
+#res {
+  position: relative;
+  width: 100px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dedada;
+
+  .close {
+    cursor: pointer;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+  }
+
+  .view {
+    flex: 1;
+  }
+
+  .name {
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
