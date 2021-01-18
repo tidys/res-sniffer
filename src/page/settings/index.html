@@ -1,0 +1,17 @@
+<div id="settings">
+    <div class="item">
+        <span>用户名:</span>
+        <i-input size="small" v-model="curUser"></i-input>
+    </div>
+    <div class="item">
+        <span>仓库名:</span>
+        <i-input size="small" v-model="curRepo"></i-input>
+    </div>
+    <div class="item">
+        <span>Token:</span>
+        <i-input size="small" v-model="curToken"></i-input>
+    </div>
+    <div class="btn">
+        <i-button size="small" :disabled="checking" @click="onConfirm">确认</i-button>
+    </div>
+</div>
