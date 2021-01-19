@@ -1,29 +1,26 @@
 const Path = require('path')
 const Fs = require('fs')
 const GiteeApi = require('../../gitee-api')
-
+const { ResInfo } = require('./data')
 module.exports = Vue.extend({
     name: 'res',
     template: Vue.readTemplate(__dirname, 'res.html'),
     props: {
         data: {
-            type: Object,
+            type: ResInfo,
         }
     },
     data () {
         return {
-            imageData: null,
+            imageSrc: null,
             isHover: false,
         }
     },
-    created () {
+    async created () {
         console.log(this.data)
-        // if (this.isImage) {
-        //     GiteeApi.getFileUrl(this.data.sha).then(({ data }) => {
-        //         this.imageData = 'data:image/png;base64' + data.content;
-        //     });
-        //
-        // }
+        if (this.data.isImage) {
+            this.imageSrc = await this.data.imageData();
+        }
     },
     methods: {
         async getImageUrl () {
@@ -33,11 +30,5 @@ module.exports = Vue.extend({
             this.$emit('delete', this.data);
         }
     },
-    computed: {
-        isImage () {
-            let ext = Path.extname(this.data.path);
-            let ret = ['.png', '.jpg', '.jpeg'].find(el => el === ext)
-            return !!ret;
-        }
-    }
+    computed: {}
 })

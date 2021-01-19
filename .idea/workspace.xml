@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd0677a4-0e62-410f-b44b-990ab2314f4d" name="Default Changelist" comment="update">
+    <list default="true" id="dd0677a4-0e62-410f-b44b-990ab2314f4d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/page/market/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/market/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/market/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/repo/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gitee-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gitee-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/mixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/mixin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/navigation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/navigation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/repo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/repo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/repo/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/repo/res.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/res.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/repo/res.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/res.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/repo/res.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/res.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +147,8 @@
       <workItem from="1610859509751" duration="4366000" />
       <workItem from="1610879724128" duration="2123000" />
       <workItem from="1610968988113" duration="27000" />
+      <workItem from="1610980268511" duration="4273000" />
+      <workItem from="1611062987592" duration="4329000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610261955534</created>
@@ -151,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610864330106</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <created>1610980322271</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610980322271</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

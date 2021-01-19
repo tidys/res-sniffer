@@ -25,7 +25,7 @@ new Vue({
         ...components
     },
     created () {
-
+        this.allPage = Config;
     },
     methods: {
         onNavigationChange (item) {
@@ -42,29 +42,7 @@ new Vue({
                 base: 'master'
             });
         },
-        onDropOver (event) {
-            let files = [];
-            const data = event.dataTransfer;
-            if (data.files !== undefined) {
-                for (let i = 0; i < data.files.length; i++) {
-                    const { name, path, type } = data.files[i];
-                    let stat = Fs.statSync(path);
-                    if (stat.isFile()) {
-                        files.push(path)
-                    } else if (stat.isDirectory()) {
 
-                    }
-                }
-            }
-            files.forEach(async (file) => {
-                let { url } = await GiteeApi.createFile(file)
-                console.log(url)
-            })
-        },
-        onDragOver (event) {
-            event.preventDefault();
-            // event.stopPropagation();
-        },
         analysisApk () {
 
         },

@@ -8,6 +8,18 @@ module.exports = {
                     duration: 2,
                 });
             }
+        },
+        onSuccess (msg) {
+            this.$Notice.success({
+                title: msg,
+                duration: 2,
+            });
+        },
+        onWarning (msg) {
+            this.$Notice.warning({
+                title: msg,
+                duration: 2,
+            })
         }
     }
 

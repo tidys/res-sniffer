@@ -42,14 +42,16 @@ module.exports = {
         let url = this._fillingUrl(action);
         return await axios.delete(url, { data })//.catch(this._onCatch)
     },
-    async deleteFile (file) {
+    async deleteFile (data) {
         if (this.isLimited) {
             return null;
         }
-
+        let file = data.path;
         const { Token } = require('./core/settings');
         return await this.delete(`${Action.DeleteFile}/${file}`, {
             access_token: Token,
+            sha: data.sha,
+            message: `delete ${data.path}`
         })
     },
 
@@ -88,34 +90,29 @@ module.exports = {
         }
 
         const { Token } = require('./core/settings');
-        let fileExt = Path.extname(filePath);
-        let fileName = Path.basename(filePath, fileExt);
-        if (!Fs.existsSync(filePath)) {
-            return console.log('文件不存在')
-        }
+
         // 有100M的限制
 
         let buffer = Fs.readFileSync(filePath)
         let base64 = Buffer.from(buffer).toString('base64')
         // 统一放  在根目录
-        // let id = new Date().getTime();
-        const MD5 = require('./md5');
-        let id = MD5.fileMD5(filePath)
-        let url = `${Action.CreateFile}/${fileName}-${id}${fileExt}`;
+        let uploadName = this.getUploadFileName(filePath);
+        let url = `${Action.CreateFile}/${uploadName}`;
         const { data } = await this.post(url, {
             access_token: Token,
             content: base64,
             message: '新建文件',
         })
-        let remoteUrl = null;
-        if (data.content) {
-            remoteUrl = data.content['download_url'];
-        }
-        return {
-            url: remoteUrl,
-            data: data,
-        }
+        return data.content;
     },
-
+    getUploadFileName (filePath) {
+        // let id = new Date().getTime();
+        const MD5 = require('./md5');
+        let id = MD5.fileMD5(filePath)
+        let fileExt = Path.extname(filePath);
+        let fileName = Path.basename(filePath, fileExt);
+        let name = `${fileName}-${id}${fileExt}`
+        return name;
+    }
 
 }

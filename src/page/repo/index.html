@@ -4,12 +4,19 @@
 
         <div class="list">
             <res v-for="(item, index) in allFiles"
+                 :key="index"
                  :data="item"
                  @delete="onDeleteFile(item)"
             >
             </res>
         </div>
-
+        <div class="drop"
+             @drop="onDropOver"
+             @dragover.stop="onDragOver"
+        >
+            <span style="user-select: none;font-size: 14px;">拖拽上传</span>
+            <Icon type="md-cloud-upload" size="30"></Icon>
+        </div>
 
     </div>
     <div class="footer">

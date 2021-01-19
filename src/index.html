@@ -12,7 +12,10 @@
 <div id="app">
     <navigation @select="onNavigationChange"></navigation>
     <div class="page">
-        <component :is="curPage"></component>
+        <component v-for="(page, index) in allPage"
+                   :key="index"
+                   v-show="page.key === curPage" :is="page.key"
+        ></component>
     </div>
     <Modal></Modal>
     <!--    <i-button @click="onClickBtn">谁star了仓库</i-button>-->
@@ -20,14 +23,7 @@
     <!--    <i-button @click="onPr">pr</i-button>-->
     <!--    <i-button @click="onCrawlingApk">爬取Android包</i-button>-->
 
-    <!--    <div class="drop"-->
-    <!--         @drop="onDropOver"-->
-    <!--         @dragover.stop="onDragOver"-->
-    <!--    >-->
-    <!--        <div>-->
-    <!--            拖拽上传-->
-    <!--        </div>-->
-    <!--    </div>-->
+
     <!--    <div class="drop">-->
     <!--        <div>拖拽apk拆包上传</div>-->
     <!--    </div>-->
