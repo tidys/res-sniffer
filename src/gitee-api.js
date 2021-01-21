@@ -1,6 +1,8 @@
 const Path = require('path')
 const Fs = require('fs')
 const axios = require('axios')
+const domain = 'https://gitee.com';
+
 const Action = {
     Stargazers: 'stargazers',// 谁star了该仓库
     Pulls: 'pulls', // 创建pr
@@ -16,7 +18,7 @@ module.exports = {
     Action,
     _fillingUrl (action) {
         const { Owner, Repo } = require('./core/settings');
-        return `https://gitee.com/api/v5/repos/${Owner}/${Repo}/${action}`;
+        return `${domain}/api/v5/repos/${Owner}/${Repo}/${action}`;
     },
     _onCatch (e) {
         const { status } = e.request;
@@ -113,6 +115,9 @@ module.exports = {
         let fileName = Path.basename(filePath, fileExt);
         let name = `${fileName}-${id}${fileExt}`
         return name;
+    },
+    previewUrl (fileName) {
+        const { Owner, Repo } = require('./core/settings');
+        return `${domain}/${Owner}/${Repo}/raw/master/${fileName}`
     }
-
 }

@@ -1,7 +1,14 @@
 <div id="repo">
+    <div class="head">
+        <div style="flex: 1;"></div>
+        <div v-if="branch" class="layout horizontal">
+            <div class="branch">
+                分支：<span>{{branch}}</span>
+            </div>
+            <Icon type="md-refresh" size="20" style="cursor: pointer;" @click="onGetRepoTree"></Icon>
+        </div>
+    </div>
     <div class="content">
-        <i-button @click="onGetRepoTree">刷新仓库</i-button>
-
         <div class="list">
             <res v-for="(item, index) in allFiles"
                  :key="index"
@@ -14,14 +21,11 @@
              @drop="onDropOver"
              @dragover.stop="onDragOver"
         >
-            <span style="user-select: none;font-size: 14px;">拖拽上传</span>
+            <span style="user-select: none;margin-right: 5px; font-size: 14px;">拖拽上传到仓库</span>
             <Icon type="md-cloud-upload" size="30"></Icon>
         </div>
-
     </div>
     <div class="footer">
-        <div v-if="branch" class="branch">
-            分支：<span>{{branch}}</span>
-        </div>
+
     </div>
 </div>

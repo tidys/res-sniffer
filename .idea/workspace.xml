@@ -2,25 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd0677a4-0e62-410f-b44b-990ab2314f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/page/market/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/market/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/market/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/repo/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/apkThief.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/apk/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/apk/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/apk/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/repo/res-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/repo/res-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/repo/res-list.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gitee-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gitee-api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/mixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/mixin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/navigation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/navigation/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/repo/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/repo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/repo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/repo/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/repo/res.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/res.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/repo/res.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/res.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/repo/res.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/res.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="xyf" pattern="!file[res-sniffer]:.idea//*&amp;&amp;!file:src/*.css" />
   </component>
   <component name="ProjectId" id="1mro9qZMVXX8NiwCK2kmnj5MpAZ" />
   <component name="ProjectLevelVcsManager">
@@ -67,7 +72,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
     <property name="settings.editor.splitter.proportion" value="0.0" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -82,7 +87,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.run">
+  <component name="RunManager" selected="npm.less-watch">
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -118,8 +123,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.run" />
         <item itemvalue="npm.less-watch" />
+        <item itemvalue="npm.run" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +153,8 @@
       <workItem from="1610879724128" duration="2123000" />
       <workItem from="1610968988113" duration="27000" />
       <workItem from="1610980268511" duration="4273000" />
-      <workItem from="1611062987592" duration="4329000" />
+      <workItem from="1611062987592" duration="5712000" />
+      <workItem from="1611237011906" duration="6730000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610261955534</created>
@@ -178,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610980322271</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="第一个版本">
+      <created>1611067500708</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611067500708</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +203,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="第一个版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一个版本" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

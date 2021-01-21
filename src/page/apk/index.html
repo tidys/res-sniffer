@@ -1,0 +1,13 @@
+<div id="apk" class="layout vertical">
+    <div class="layout vertical" style="margin: 5px;">
+        <i-progress :stroke-width="20" :percent="percent" text-inside></i-progress>
+        <div class="layout horizontal center">
+            <span style="margin: 0 5px;">URL:</span>
+            <i-input size="small" v-model="apkUrl" class="flex1"></i-input>
+        </div>
+        <div class="layout horizontal-reverse">
+            <Icon style="cursor: pointer;" type="md-folder" size="30" @click="onOpenDir"></Icon>
+            <i-button size="small" @click="onThiefApk">爬取</i-button>
+        </div>
+    </div>
+</div>

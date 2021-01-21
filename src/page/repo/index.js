@@ -14,13 +14,14 @@ module.exports = Vue.extend({
         return {
             branch: null,
             allFiles: [],
+
         }
     },
     async created () {
     },
     async mounted () {
         // this.onTestData();
-        await this.onGetRepoTree();
+        // await this.onGetRepoTree();
     },
     methods: {
         async onDeleteFile (item) {
@@ -86,5 +87,6 @@ module.exports = Vue.extend({
             event.preventDefault();
             // event.stopPropagation();
         },
+
     }
 })
