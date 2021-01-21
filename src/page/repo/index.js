@@ -87,6 +87,9 @@ module.exports = Vue.extend({
             event.preventDefault();
             // event.stopPropagation();
         },
+        onShareRepo () {
+
+        },
 
     }
 })
