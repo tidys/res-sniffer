@@ -4,8 +4,10 @@
     <Icon class="close"
           @click="onClose"
           v-show="isHover" size="20" type="md-close-circle"></Icon>
-    <div v-if="isImage" class="view">
-        <img :src="imageData" alt="">
+    <div v-if="data.isImage" class="view">
+        <div style="width: 100%;height: 100%;">
+            <img :src="imageSrc" alt="">
+        </div>
     </div>
     <div class="name">
         {{data.path}}

@@ -1,6 +1,7 @@
 const Path = require('path');
 const Fs = require('fs');
 const axios = require('axios');
+const domain = 'https://gitee.com';
 const Action = {
     Stargazers: 'stargazers',// 谁star了该仓库
     Pulls: 'pulls', // 创建pr
@@ -16,7 +17,7 @@ module.exports = {
     Action,
     _fillingUrl (action) {
         const { Owner, Repo } = require('./core/settings');
-        return `https://gitee.com/api/v5/repos/${Owner}/${Repo}/${action}`;
+        return `${domain}/api/v5/repos/${Owner}/${Repo}/${action}`;
     },
     _onCatch (e) {
         const { status } = e.request;
@@ -42,15 +43,17 @@ module.exports = {
         let url = this._fillingUrl(action);
         return await axios.delete(url, { data });//.catch(this._onCatch)
     },
-    async deleteFile (file) {
+    async deleteFile (data) {
         if (this.isLimited) {
             return null;
         }
-
+        let file = data.path;
         const { Token } = require('./core/settings');
         return await this.delete(`${Action.DeleteFile}/${file}`, {
             access_token: Token,
-        });
+            sha: data.sha,
+            message: `delete ${data.path}`
+        })
     },
 
     pages () {
@@ -98,24 +101,24 @@ module.exports = {
         let buffer = Fs.readFileSync(filePath);
         let base64 = Buffer.from(buffer).toString('base64');
         // 统一放  在根目录
-        // let id = new Date().getTime();
-        const MD5 = require('./md5');
-        let id = MD5.fileMD5(filePath);
-        let url = `${Action.CreateFile}/${fileName}-${id}${fileExt}`;
+        let uploadName = this.getUploadFileName(filePath);
+        let url = `${Action.CreateFile}/${uploadName}`;
         const { data } = await this.post(url, {
             access_token: Token,
             content: base64,
             message: '新建文件',
-        });
-        let remoteUrl = null;
-        if (data.content) {
-            remoteUrl = data.content['download_url'];
-        }
-        return {
-            url: remoteUrl,
-            data: data,
-        };
+        })
+        return data.content;
+    },
+    getUploadFileName (filePath) {
+        // let id = new Date().getTime();
+        const MD5 = require('./md5');
+        let id = MD5.fileMD5(filePath)
+        let fileExt = Path.extname(filePath);
+        let fileName = Path.basename(filePath, fileExt);
+        let name = `${fileName}-${id}${fileExt}`
+        return name;
     },
 
 
-};
+}

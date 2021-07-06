@@ -3,6 +3,20 @@
   display: flex;
   flex-direction: column;
 
+  .head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .branch {
+      user-select: none;
+      margin: 0 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
   .content {
     display: flex;
     flex: 1;
@@ -15,6 +29,18 @@
       flex-wrap: wrap;
       align-content: flex-start;
     }
+
+    .drop {
+      color: rebeccapurple;
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
 
@@ -23,12 +49,6 @@
     flex-direction: row;
     justify-content: flex-end;
 
-    .branch {
-      user-select: none;
-      margin: 0 5px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
+
   }
 }
