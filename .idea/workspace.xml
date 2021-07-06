@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd0677a4-0e62-410f-b44b-990ab2314f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/apkThief.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/apk/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/apk/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/apk/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/repo/res-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/repo/res-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/repo/res-list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gitee-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gitee-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/repo/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/repo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/repo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/repo/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,8 +98,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.run" />
       <item itemvalue="npm.less-watch" />
+      <item itemvalue="npm.run" />
     </list>
     <recent_temporary>
       <list>
@@ -196,9 +176,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
