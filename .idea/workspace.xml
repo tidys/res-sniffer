@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd0677a4-0e62-410f-b44b-990ab2314f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/mixin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/repo/res.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/repo/res.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/repo/res.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/settings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gitee-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gitee-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/navigation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/repo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/repo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/repo/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/repo/index.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +37,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.22.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="10.17.50" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.13.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="10.17.51" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,7 +50,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="settings.editor.splitter.proportion" value="0.0" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -79,7 +65,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.less-watch">
+  <component name="RunManager" selected="npm.run">
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -115,8 +101,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.less-watch" />
         <item itemvalue="npm.run" />
+        <item itemvalue="npm.less-watch" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +128,7 @@
       <workItem from="1610791172055" duration="580000" />
       <workItem from="1610855930224" duration="43000" />
       <workItem from="1610859509751" duration="4228000" />
+      <workItem from="1610974617858" duration="232000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1610261955534</created>
@@ -163,13 +150,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1482" height="240" key="GridCell.Tab.0.bottom" timestamp="1610974851213">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1482" height="240" key="GridCell.Tab.0.bottom/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1610974851213" />
+    <state width="1482" height="240" key="GridCell.Tab.0.center" timestamp="1610974851212">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1482" height="240" key="GridCell.Tab.0.center/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1610974851212" />
+    <state width="1482" height="240" key="GridCell.Tab.0.left" timestamp="1610974851212">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1482" height="240" key="GridCell.Tab.0.left/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1610974851212" />
+    <state width="1482" height="240" key="GridCell.Tab.0.right" timestamp="1610974851212">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1482" height="240" key="GridCell.Tab.0.right/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1610974851212" />
+    <state x="621" y="193" key="SettingsEditor" timestamp="1610974691592">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="621" y="193" key="SettingsEditor/62.0.1858.1080/1920.0.1920.1080@62.0.1858.1080" timestamp="1610974691592" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
